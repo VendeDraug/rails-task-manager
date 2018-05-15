@@ -1,0 +1,13 @@
+<h1><%= @task.title.upcase %></h1>
+
+<h2>  <i class="<%= @task.completed ? 'far fa-check-circle' : 'far fa-circle' %>"></i> <%= @task.details.capitalize %></h2>
+
+<%= link_to "Edit this task", edit_task_path(@task.id) %>
+<br>
+<%= link_to "Delete this task", task_path(@task), method: :delete %>
+
+<br>
+<br>
+<br>
+
+<%= link_to "Back to To Do list", tasks_path %>
