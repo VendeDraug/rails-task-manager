@@ -4,7 +4,7 @@
 <% @tasks.each do |task| %>
   <li><i class="<%= task.completed ? 'far fa-check-circle' : 'far fa-circle' %>"></i>
   <%= link_to task_path(task) do %>
-    <%= task.title.capitalize %>
+    <%= task.title %>
   <% end %>
 <% end %></li>
 </ul>
